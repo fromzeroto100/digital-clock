@@ -11,7 +11,7 @@ try:
         # % 12 so we use a 12-hour clock, not 24:
         hours = str(currentTime.tm_hour % 12)
         if hours == '0':
-            hours == '12' #12-hour clock show 12:00, not 00:00.
+            hours = '12' #12-hour clock show 12:00, not 00:00.
         minutes = str(currentTime.tm_min)
         seconds = str(currentTime.tm_sec)    
 
